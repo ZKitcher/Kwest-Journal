@@ -10,14 +10,6 @@ This project demonstrates a simple yet effective state management setup using Re
 - **Enum Class**: Provides an enumeration class for managing action types in a structured way.
 - **Custom Hooks**: Includes custom hooks (readKwestJournal and usePersistedState) for easy state management and persistence.
 
-## Installation
-
-1. Clone the repository:
-
-```bash
-npm i kwest-journal
-```
-
 ## Usage
 1. Import the StateProvider component and wrap it around your application's root component in index.js or App.js:
 
