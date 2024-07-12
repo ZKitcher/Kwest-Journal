@@ -31,7 +31,7 @@ export const GlobalContext = createContext(initialState);
 const StateProvider = ({ children, localKey = 'global', initialValues = initialState, reducer = Reducer, clearState = false }) => {
     if (clearState) clearAllPersistedState();
 
-    const [persistedState, setPersistedState] = usePersistedState(localKey, initialValues);
+    const [persistedState, setPersistedState] = UsePersistedState(localKey, initialValues);
     const [state, dispatch] = useReducer(reducer, persistedState);
 
     useEffect(() => {
@@ -49,7 +49,7 @@ const ActionType = new Enum([
     'HELLO_WORLD',
 ]);
 
-export function readKwestJournal() {
+export function ReadKwestJournal() {
     const { state, dispatch } = useContext(GlobalContext);
 
     const [functions] = useState({
@@ -78,7 +78,7 @@ const Reducer = (state = initialState, action) => {
     return newState;
 };
 
-const usePersistedState = (key, initialState) => {
+const UsePersistedState = (key, initialState) => {
     const storageKey = `Kwest-Journal.${key}`;
     const hydrateState = () => {
         try {
