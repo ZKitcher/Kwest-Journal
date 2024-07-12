@@ -1,0 +1,30 @@
+{
+    "name": "kwest-journal",
+    "version": "1.0.0",
+    "description": "State management system for a React application using Context and custom hooks.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "ZKithcer",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ZKitcher/Kwest-Journal.git"
+    },
+    "keywords": [
+        "http",
+        "async",
+        "client",
+        "request",
+        "fetch",
+        "javascript"
+    ],
+    "peerDependencies": {
+        "react": ">= 16.8.0"
+    },
+    "bugs": {
+        "url": "https://github.com/ZKitcher/Kwest-Journal/issues"
+    },
+    "homepage": "https://github.com/ZKitcher/Kwest-Journal#readme",
+    "license": "MIT"
+}
